@@ -121,6 +121,7 @@ namespace FinalProject
             textBox2.Location = new Point(542, 277);
             textBox2.MaximumSize = new Size(300, 0);
             textBox2.Name = "textBox2";
+            textBox2.PasswordChar = '*';
             textBox2.Size = new Size(300, 42);
             textBox2.TabIndex = 2;
             textBox2.TextChanged += textBox2_TextChanged;
@@ -194,7 +195,6 @@ namespace FinalProject
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(158, 158, 168);
             ClientSize = new Size(994, 616);
-            this.StartPosition = FormStartPosition.CenterScreen;
             Controls.Add(linkLabel1);
             Controls.Add(label3);
             Controls.Add(button2);
@@ -207,6 +207,7 @@ namespace FinalProject
             Controls.Add(label1);
             Controls.Add(panel1);
             Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

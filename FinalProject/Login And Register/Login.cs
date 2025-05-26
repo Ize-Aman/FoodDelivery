@@ -48,13 +48,17 @@ namespace FinalProject
                     }
                     else
                     {
-                        MessageBox.Show("Well Well Well");
+                        MessageBox.Show("Account not found, please register!");
                     }
                     con.Close();
                 }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Error in the database\n" + ex);
+                }
                 catch(Exception ex)
                 {
-                    MessageBox.Show("Well well well\n" + ex);
+                    MessageBox.Show("Unexpected Error occured\n" + ex);
                 }
             }
         }

@@ -69,6 +69,7 @@
             button1.TabIndex = 1;
             button1.Text = "Customers";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -119,7 +120,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(158, 158, 168);
             ClientSize = new Size(1120, 639);
-            this.StartPosition = FormStartPosition.CenterScreen;
             Controls.Add(pictureBox2);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -127,6 +127,7 @@
             Controls.Add(button1);
             Controls.Add(panel1);
             Name = "AdminLanding";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

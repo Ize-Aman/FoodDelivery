@@ -51,9 +51,17 @@ namespace FinalProject
                     customerSide.FormClosed += (s, args) => this.Close();
                     customerSide.Show();
                 }
-                catch (Exception ex)
+                catch (FormatException)
                 {
-                    MessageBox.Show("Well Well Well" + ex);
+                    MessageBox.Show("Please enter the correct value\n");
+                }
+                catch(SqlException ex)
+                {
+                    MessageBox.Show("incorrect value entered or there was an Error in the database\n" + ex);
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Unexpected error occured\n" + ex);
                 }
             }
         }

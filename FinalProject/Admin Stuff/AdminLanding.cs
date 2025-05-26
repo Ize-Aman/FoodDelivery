@@ -24,5 +24,10 @@ namespace FinalProject
             Dispose();
             _loginForm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new AdminControls().Show();
+        }
     }
 }

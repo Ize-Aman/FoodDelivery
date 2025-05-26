@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,34 @@ namespace FinalProject
 {
     public partial class AdminControls : Form
     {
+        public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
         public AdminControls()
         {
             InitializeComponent();
+        }
+
+        private void button5_Click(object sender, EventArgs e) //refresh Button
+        {
+            string query = "SELECT * FROM Users";
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
+            try
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+
+                dataGridView1.DataSource = table;
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Error in the database");
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unexpected error occured...\n" + ex);
+            }
         }
     }
 }
