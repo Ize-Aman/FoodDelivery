@@ -87,3 +87,4 @@ G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\bin\D
 G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.csproj.AssemblyReference.cache
 G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalPro.8C09D514.Up2Date
+G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.AdminControls.resources
