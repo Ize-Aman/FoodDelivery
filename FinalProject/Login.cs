@@ -1,31 +1,85 @@
+using Microsoft.Data.SqlClient;
 namespace FinalProject
 {
     public partial class Login : Form
     {
+        public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
+        private string userName, password;
+        private char userType;
         public Login()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //login button
         {
-            this.Hide();
-            var AdminSide = new AdminLanding(this);
-            AdminSide.FormClosed += (s, args) => this.Close();
-            AdminSide.Show();
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
+            if (con.State == System.Data.ConnectionState.Open)
+            {
+                string query = "SELECT UserType FROM Users WHERE UserName = @username AND Password = @password";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@username", userName);
+                cmd.Parameters.AddWithValue ("@Password" , password);
+
+                try
+                {
+                    var result = cmd.ExecuteScalar();
+
+                    if(result != null)
+                    {
+                        userType = char.Parse(result.ToString());
+
+                        if(userType == 'A' )
+                        {
+                            this.Hide();
+                            var AdminSide = new AdminLanding(this);
+                            AdminSide.FormClosed += (s, args) => this.Close();
+                            AdminSide.Show();
+                        }
+
+                        else if(userType == 'C')
+                        {
+                            this.Hide();
+                            var customerSide = new CustomerLanding(this);
+                            customerSide.FormClosed += (s, args) => this.Close();
+                            customerSide.Show();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Well Well Well");
+                    }
+                    con.Close();
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Well well well\n" + ex);
+                }
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //quit button
         {
             this.Close();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) //register linked label
         {
             this.Hide();
             var registerForm = new Register(this);
             registerForm.FormClosed += (s, args) => this.Close();
             registerForm.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e) //txtUserName 
+        {
+            userName = textBox1.Text.ToString();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e) //txtPassword
+        {
+            password = textBox2.Text.ToString();
         }
     }
 }

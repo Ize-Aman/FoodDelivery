@@ -93,6 +93,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(300, 42);
             textBox1.TabIndex = 6;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label3
             // 
@@ -117,6 +118,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(300, 42);
             textBox2.TabIndex = 6;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // label4
             // 
@@ -141,6 +143,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(300, 42);
             textBox3.TabIndex = 6;
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // label5
             // 
@@ -165,6 +168,7 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(300, 42);
             textBox4.TabIndex = 6;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // label6
             // 
@@ -189,6 +193,7 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(300, 42);
             textBox5.TabIndex = 6;
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // label7
             // 
@@ -213,6 +218,7 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(300, 42);
             textBox6.TabIndex = 6;
+            textBox6.TextChanged += textBox6_TextChanged;
             // 
             // label8
             // 
@@ -237,6 +243,7 @@
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(300, 42);
             textBox7.TabIndex = 6;
+            textBox7.TextChanged += textBox7_TextChanged;
             // 
             // button1
             // 
@@ -249,7 +256,7 @@
             button1.Name = "button1";
             button1.Size = new Size(137, 48);
             button1.TabIndex = 7;
-            button1.Text = "Login";
+            button1.Text = "Register";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
@@ -293,6 +300,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(label2);
             Name = "Register";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);

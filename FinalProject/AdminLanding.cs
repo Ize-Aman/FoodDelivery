@@ -13,13 +13,13 @@ namespace FinalProject
     public partial class AdminLanding : Form
     {
         private Login _loginForm;
-        public AdminLanding(Login loginForm)
+        public AdminLanding(Login loginForm) //constructor for logout button and initialize components
         {
             InitializeComponent();
             _loginForm = loginForm;
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e) //the logout button
         {
             Dispose();
             _loginForm.Show();

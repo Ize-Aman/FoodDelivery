@@ -12,10 +12,49 @@ namespace FinalProject
 {
     public partial class CustomerLanding : Form
     {
-        public CustomerLanding()
+        private Login _loginForm;
+        private Register _registerForm;
+
+        //the following constructors are used so that the logout button works perfectly and to initialize components
+
+        //START CONSTRUCTORS
+        public CustomerLanding(Login _loginForm)
         {
             InitializeComponent();
+            this._loginForm = _loginForm;
+        }
+        public CustomerLanding(Register registerForm)
+        {
+            InitializeComponent();
+            _registerForm = registerForm;
         }
 
+        public CustomerLanding(Register _registerForm, Login _loginForm)
+        {
+            InitializeComponent();
+            this._loginForm = _loginForm;
+            this._registerForm = _registerForm;
+        }
+
+        //CONSTRUCTORS END HERE
+
+        private void pictureBox10_Click(object sender, EventArgs e) //logout button
+        {
+            Dispose();
+            try
+            {
+                _loginForm.Show();
+            }
+            catch (Exception)
+            {
+                new Login().Show();
+            }
+        }
+
+        //each restaurants as a card
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

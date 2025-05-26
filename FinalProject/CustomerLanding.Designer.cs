@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerLanding));
             panel1 = new Panel();
+            pictureBox10 = new PictureBox();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
@@ -44,6 +45,7 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -59,6 +61,7 @@
             // 
             panel1.AutoScroll = true;
             panel1.BackColor = Color.FromArgb(57, 57, 57);
+            panel1.Controls.Add(pictureBox10);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
@@ -76,6 +79,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(616, 875);
             panel1.TabIndex = 0;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.BackColor = Color.FromArgb(255, 172, 75);
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
+            pictureBox10.Location = new Point(9, 13);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(40, 44);
+            pictureBox10.TabIndex = 4;
+            pictureBox10.TabStop = false;
+            pictureBox10.Click += pictureBox10_Click;
             // 
             // label4
             // 
@@ -164,6 +178,7 @@
             pictureBox6.Size = new Size(138, 135);
             pictureBox6.TabIndex = 2;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // pictureBox5
             // 
@@ -217,9 +232,11 @@
             ClientSize = new Size(616, 871);
             Controls.Add(panel1);
             Name = "CustomerLanding";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CustomerLanding";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
@@ -249,5 +266,6 @@
         private PictureBox pictureBox9;
         private PictureBox pictureBox8;
         private PictureBox pictureBox7;
+        private PictureBox pictureBox10;
     }
 }

@@ -119,6 +119,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(158, 158, 168);
             ClientSize = new Size(1120, 639);
+            this.StartPosition = FormStartPosition.CenterScreen;
             Controls.Add(pictureBox2);
             Controls.Add(button4);
             Controls.Add(button3);

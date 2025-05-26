@@ -89,6 +89,7 @@ namespace FinalProject
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(300, 42);
             textBox1.TabIndex = 2;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // pictureBox2
             // 
@@ -120,9 +121,9 @@ namespace FinalProject
             textBox2.Location = new Point(542, 277);
             textBox2.MaximumSize = new Size(300, 0);
             textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
             textBox2.Size = new Size(300, 42);
             textBox2.TabIndex = 2;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // pictureBox3
             // 
@@ -193,6 +194,7 @@ namespace FinalProject
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(158, 158, 168);
             ClientSize = new Size(994, 616);
+            this.StartPosition = FormStartPosition.CenterScreen;
             Controls.Add(linkLabel1);
             Controls.Add(label3);
             Controls.Add(button2);
