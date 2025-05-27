@@ -32,7 +32,7 @@ namespace FinalProject
                     {
                         userType = char.Parse(result.ToString());
 
-                        if(userType == 'A' )
+                        if(userType == 'A' || userType == 'a')
                         {
                             this.Hide();
                             var AdminSide = new AdminLanding(this);
@@ -40,7 +40,7 @@ namespace FinalProject
                             AdminSide.Show();
                         }
 
-                        else if(userType == 'C')
+                        else if(userType == 'C' || userType == 'c')
                         {
                             this.Hide();
                             var customerSide = new CustomerLanding(this);

@@ -67,7 +67,7 @@
             button1.Name = "button1";
             button1.Size = new Size(259, 58);
             button1.TabIndex = 1;
-            button1.Text = "Customers";
+            button1.Text = "Users";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 

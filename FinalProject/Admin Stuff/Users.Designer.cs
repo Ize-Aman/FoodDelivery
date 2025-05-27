@@ -1,6 +1,6 @@
 ﻿namespace FinalProject.Admin_Stuff
 {
-    partial class Customers
+    partial class Users
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customers));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Users));
             textBox5 = new TextBox();
             label6 = new Label();
             textBox6 = new TextBox();
@@ -88,20 +88,36 @@
             panel1.Controls.SetChildIndex(label11, 0);
             panel1.Controls.SetChildIndex(textBox10, 0);
             // 
+            // textBox1
+            // 
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
             // label2
             // 
             label2.Size = new Size(111, 30);
             label2.Text = "Username";
+            // 
+            // textBox2
+            // 
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // label1
             // 
             label1.Size = new Size(103, 30);
             label1.Text = "Password";
             // 
+            // textBox3
+            // 
+            textBox3.TextChanged += textBox3_TextChanged;
+            // 
             // label3
             // 
             label3.Size = new Size(64, 30);
             label3.Text = "Email";
+            // 
+            // textBox4
+            // 
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // label4
             // 
@@ -122,11 +138,19 @@
             // 
             button5.Click += button5_Click;
             // 
+            // button2
+            // 
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.Click += button1_Click;
+            // 
             // label5
             // 
             label5.Location = new Point(401, 9);
-            label5.Size = new Size(170, 50);
-            label5.Text = "Customers";
+            label5.Size = new Size(104, 50);
+            label5.Text = "Users";
             // 
             // textBox5
             // 
@@ -135,6 +159,7 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(190, 37);
             textBox5.TabIndex = 15;
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // label6
             // 
@@ -143,9 +168,9 @@
             label6.ForeColor = Color.White;
             label6.Location = new Point(4, 57);
             label6.Name = "label6";
-            label6.Size = new Size(134, 30);
+            label6.Size = new Size(84, 30);
             label6.TabIndex = 14;
-            label6.Text = "Customer ID";
+            label6.Text = "User ID";
             // 
             // textBox6
             // 
@@ -154,6 +179,7 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(190, 37);
             textBox6.TabIndex = 17;
+            textBox6.TextChanged += textBox6_TextChanged;
             // 
             // label7
             // 
@@ -173,6 +199,7 @@
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(190, 37);
             textBox7.TabIndex = 19;
+            textBox7.TextChanged += textBox7_TextChanged;
             // 
             // label8
             // 
@@ -192,6 +219,7 @@
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(190, 37);
             textBox8.TabIndex = 21;
+            textBox8.TextChanged += textBox8_TextChanged;
             // 
             // label9
             // 
@@ -211,6 +239,7 @@
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(190, 37);
             textBox9.TabIndex = 23;
+            textBox9.TextChanged += textBox9_TextChanged;
             // 
             // label10
             // 
@@ -230,6 +259,7 @@
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(190, 37);
             textBox10.TabIndex = 25;
+            textBox10.TextChanged += textBox10_TextChanged;
             // 
             // label11
             // 
@@ -242,13 +272,12 @@
             label11.TabIndex = 24;
             label11.Text = "User Type";
             // 
-            // Customers
+            // Users
             // 
-            
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1013, 654);
-            Name = "Customers";
+            Name = "Users";
             Text = "Customers";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

@@ -32,7 +32,8 @@ namespace FinalProject
 
             if (con.State == System.Data.ConnectionState.Open)
             {
-                string query = "INSERT INTO Users(UserName, Password, F_Name, L_Name, Phone, Email, Address, UserType, Gender) VALUES (@username, @password, @firstname, @lastname, @phone, @email, @address, 'C', 'M')";
+                string query = @"INSERT INTO Users(UserName, Password, F_Name, L_Name, Phone, Email, Address, UserType, Gender) VALUES 
+                                (@username, @password, @firstname, @lastname, @phone, @email, @address, 'C', 'M')";
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 cmd.Parameters.AddWithValue("@username", username);

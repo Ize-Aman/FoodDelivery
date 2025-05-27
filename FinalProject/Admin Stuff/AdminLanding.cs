@@ -30,7 +30,7 @@ namespace FinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Customers().ShowDialog();
+            new Users().ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)

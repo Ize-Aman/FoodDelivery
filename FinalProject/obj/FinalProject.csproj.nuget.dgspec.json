@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "g:\\School stuff\\C#\\Final Project\\FinalProjectZip\\FinalProject\\FinalProject\\FinalProject.csproj": {}
+    "G:\\School stuff\\C#\\Final Project\\FinalProjectZip\\FinalProject\\FinalProject\\FinalProject.csproj": {}
   },
   "projects": {
-    "g:\\School stuff\\C#\\Final Project\\FinalProjectZip\\FinalProject\\FinalProject\\FinalProject.csproj": {
+    "G:\\School stuff\\C#\\Final Project\\FinalProjectZip\\FinalProject\\FinalProject\\FinalProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "g:\\School stuff\\C#\\Final Project\\FinalProjectZip\\FinalProject\\FinalProject\\FinalProject.csproj",
+        "projectUniqueName": "G:\\School stuff\\C#\\Final Project\\FinalProjectZip\\FinalProject\\FinalProject\\FinalProject.csproj",
         "projectName": "FinalProject",
-        "projectPath": "g:\\School stuff\\C#\\Final Project\\FinalProjectZip\\FinalProject\\FinalProject\\FinalProject.csproj",
+        "projectPath": "G:\\School stuff\\C#\\Final Project\\FinalProjectZip\\FinalProject\\FinalProject\\FinalProject.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "g:\\School stuff\\C#\\Final Project\\FinalProjectZip\\FinalProject\\FinalProject\\obj\\",
+        "outputPath": "G:\\School stuff\\C#\\Final Project\\FinalProjectZip\\FinalProject\\FinalProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
