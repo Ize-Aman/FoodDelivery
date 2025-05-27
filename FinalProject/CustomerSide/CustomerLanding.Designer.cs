@@ -78,12 +78,13 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(1, -3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(616, 875);
+            panel1.Size = new Size(612, 875);
             panel1.TabIndex = 0;
             // 
             // pictureBox10
             // 
             pictureBox10.BackColor = Color.FromArgb(255, 172, 75);
+            pictureBox10.Cursor = Cursors.Hand;
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
             pictureBox10.Location = new Point(9, 13);
             pictureBox10.Name = "pictureBox10";
@@ -219,11 +220,11 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-24, 0);
+            pictureBox1.Location = new Point(-7, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(613, 451);
+            pictureBox1.Size = new Size(609, 831);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 

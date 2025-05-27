@@ -18,6 +18,8 @@ namespace FinalProject
         {
             InitializeComponent();
             _loginForm = loginForm;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e) //the logout button
@@ -28,12 +30,24 @@ namespace FinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new AdminControls().ShowDialog();
+            new Customers().ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             new Orders().ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Restaurants().ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new Drivers().ShowDialog();
+        }
+
+        
     }
 }

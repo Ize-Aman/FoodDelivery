@@ -244,6 +244,7 @@
             // 
             // Customers
             // 
+            
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1013, 654);

@@ -14,6 +14,7 @@ namespace FinalProject.Admin_Stuff
     public partial class Customers : MainControl
     {
         public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
+        private string customerID, userName, password, firstName, last;
         public Customers()
         {
             InitializeComponent();

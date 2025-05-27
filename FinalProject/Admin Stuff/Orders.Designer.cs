@@ -32,6 +32,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(779, 92);
+            // 
             // button5
             // 
             button5.Click += button5_Click;

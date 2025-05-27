@@ -9,19 +9,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProject
+namespace FinalProject.Admin_Stuff
 {
-    public partial class AdminControls : Form
+    public partial class Drivers : MainControl
     {
         public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
-        public AdminControls()
+        public Drivers()
         {
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e) //refresh Button
+        private void button5_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM Users";
+            string query = "SELECT * FROM Driver";
             SqlConnection con = new SqlConnection(conString);
             con.Open();
             try

@@ -15,6 +15,8 @@ namespace FinalProject.Admin_Stuff
         public MainControl()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
         }
     }
 }
