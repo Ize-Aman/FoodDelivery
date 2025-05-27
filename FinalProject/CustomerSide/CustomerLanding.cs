@@ -22,6 +22,8 @@ namespace FinalProject
         {
             InitializeComponent();
             this._loginForm = _loginForm;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
         }
         public CustomerLanding(Register registerForm)
         {

@@ -81,6 +81,7 @@
             button2.TabIndex = 1;
             button2.Text = "Restaurants";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -92,6 +93,7 @@
             button3.TabIndex = 1;
             button3.Text = "Drivers";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -103,9 +105,11 @@
             button4.TabIndex = 1;
             button4.Text = "Orders";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // pictureBox2
             // 
+            pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(12, 552);
             pictureBox2.Name = "pictureBox2";
@@ -128,7 +132,7 @@
             Controls.Add(panel1);
             Name = "AdminLanding";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Welcome!";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
