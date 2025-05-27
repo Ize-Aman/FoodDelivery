@@ -103,9 +103,11 @@
             button4.TabIndex = 1;
             button4.Text = "Orders";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // pictureBox2
             // 
+            pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(12, 552);
             pictureBox2.Name = "pictureBox2";

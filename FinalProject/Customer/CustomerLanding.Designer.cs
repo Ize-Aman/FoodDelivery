@@ -59,6 +59,7 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.AutoScroll = true;
             panel1.BackColor = Color.FromArgb(57, 57, 57);
             panel1.Controls.Add(pictureBox10);
@@ -218,8 +219,9 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Location = new Point(-24, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(613, 451);
             pictureBox1.TabIndex = 0;

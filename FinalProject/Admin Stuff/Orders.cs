@@ -11,17 +11,18 @@ using System.Windows.Forms;
 
 namespace FinalProject.Admin_Stuff
 {
-    public partial class Customers : MainControl
+    public partial class Orders : MainControl
     {
         public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
-        public Customers()
+
+        public Orders()
         {
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e) //Refresh button
+        private void button5_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM Users";
+            string query = "SELECT * FROM [Order]";
             SqlConnection con = new SqlConnection(conString);
             con.Open();
             try

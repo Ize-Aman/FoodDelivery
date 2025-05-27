@@ -89,3 +89,6 @@ G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\D
 G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalPro.8C09D514.Up2Date
 G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.AdminControls.resources
 G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.MainControl.resources
+G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Customers.resources
+G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Orders.resources
+g:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Restaurants.resources

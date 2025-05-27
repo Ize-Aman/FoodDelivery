@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalProject.Admin_Stuff;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,7 +28,12 @@ namespace FinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new AdminControls().Show();
+            new AdminControls().ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new Orders().ShowDialog();
         }
     }
 }

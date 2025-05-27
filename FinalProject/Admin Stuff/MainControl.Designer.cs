@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainControl));
             panel1 = new Panel();
+            label5 = new Label();
             button4 = new Button();
             button3 = new Button();
             button5 = new Button();
@@ -54,6 +55,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(70, 152, 240);
+            panel1.Controls.Add(label5);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button5);
@@ -74,6 +76,17 @@
             panel1.Size = new Size(1013, 369);
             panel1.TabIndex = 0;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Agency FB", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(433, 9);
+            label5.Name = "label5";
+            label5.Size = new Size(79, 50);
+            label5.TabIndex = 13;
+            label5.Text = "Title";
+            // 
             // button4
             // 
             button4.BackColor = Color.FromArgb(161, 218, 188);
@@ -81,7 +94,7 @@
             button4.Name = "button4";
             button4.Size = new Size(153, 34);
             button4.TabIndex = 7;
-            button4.Text = "Total Orders";
+            button4.Text = "Total Stuff";
             button4.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -270,5 +283,6 @@
         public Button button1;
         public TextBox textBox11;
         public DataGridView dataGridView1;
+        public Label label5;
     }
 }
