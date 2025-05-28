@@ -39,6 +39,7 @@
             // 
             panel1.Controls.Add(textBox5);
             panel1.Controls.Add(label6);
+            panel1.Controls.SetChildIndex(button6, 0);
             panel1.Controls.SetChildIndex(label2, 0);
             panel1.Controls.SetChildIndex(textBox1, 0);
             panel1.Controls.SetChildIndex(label3, 0);
@@ -58,6 +59,10 @@
             panel1.Controls.SetChildIndex(label6, 0);
             panel1.Controls.SetChildIndex(textBox5, 0);
             // 
+            // textBox1
+            // 
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
             // label2
             // 
             label2.Size = new Size(99, 30);
@@ -66,6 +71,7 @@
             // textBox2
             // 
             textBox2.Location = new Point(153, 168);
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // label1
             // 
@@ -76,6 +82,7 @@
             // textBox3
             // 
             textBox3.Location = new Point(505, 111);
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // label3
             // 
@@ -85,6 +92,7 @@
             // textBox4
             // 
             textBox4.Location = new Point(505, 165);
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // label4
             // 
@@ -100,10 +108,23 @@
             // button4
             // 
             button4.Text = "Total Drivers";
+            button4.Click += button4_Click;
+            // 
+            // button3
+            // 
+            button3.Click += button3_Click;
             // 
             // button5
             // 
             button5.Click += button5_Click;
+            // 
+            // button2
+            // 
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.Click += button1_Click;
             // 
             // label5
             // 
@@ -117,6 +138,7 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(190, 37);
             textBox5.TabIndex = 14;
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // label6
             // 

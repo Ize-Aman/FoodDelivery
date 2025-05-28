@@ -33,20 +33,36 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
+            // textBox1
+            // 
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
             // label2
             // 
             label2.Size = new Size(141, 30);
             label2.Text = "Restaurant ID";
+            // 
+            // textBox2
+            // 
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // label1
             // 
             label1.Size = new Size(71, 30);
             label1.Text = "Name";
             // 
+            // textBox3
+            // 
+            textBox3.TextChanged += textBox3_TextChanged;
+            // 
             // label3
             // 
             label3.Size = new Size(94, 30);
             label3.Text = "Location";
+            // 
+            // textBox4
+            // 
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // label4
             // 
@@ -62,10 +78,23 @@
             // button4
             // 
             button4.Text = "Total Restaurants";
+            button4.Click += button4_Click;
+            // 
+            // button3
+            // 
+            button3.Click += button3_Click;
             // 
             // button5
             // 
             button5.Click += button5_Click;
+            // 
+            // button2
+            // 
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.Click += button1_Click;
             // 
             // label5
             // 

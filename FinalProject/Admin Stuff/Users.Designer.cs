@@ -152,10 +152,6 @@
             // 
             button1.Click += button1_Click;
             // 
-            // textBox11
-            // 
-            textBox11.TextChanged += textBox11_TextChanged;
-            // 
             // label5
             // 
             label5.Location = new Point(401, 9);

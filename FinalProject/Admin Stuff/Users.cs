@@ -135,7 +135,7 @@ namespace FinalProject.Admin_Stuff
             }
         }
 
-        private void button2_Click(object sender, EventArgs e) //insert button
+        private void button2_Click(object sender, EventArgs e) //Update button
         {
             SqlConnection con = new SqlConnection(conString);
             con.Open();
@@ -258,7 +258,7 @@ namespace FinalProject.Admin_Stuff
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e) //total customers button
         {
             SqlConnection con = new SqlConnection(conString);
             con.Open();
@@ -277,14 +277,10 @@ namespace FinalProject.Admin_Stuff
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Unexpected error occured");
+                    MessageBox.Show("Unexpected error occured" + ex);
                 }
             }
         }
 
-        private void textBox11_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

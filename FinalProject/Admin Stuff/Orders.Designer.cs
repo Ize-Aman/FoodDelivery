@@ -32,13 +32,46 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
+            // textBox1
+            // 
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // textBox2
+            // 
+            textBox2.TextChanged += textBox2_TextChanged;
+            // 
+            // textBox3
+            // 
+            textBox3.TextChanged += textBox3_TextChanged;
+            // 
+            // textBox4
+            // 
+            textBox4.TextChanged += textBox4_TextChanged;
+            // 
             // pictureBox1
             // 
             pictureBox1.Location = new Point(779, 92);
             // 
+            // button4
+            // 
+            button4.Text = "Total orders";
+            button4.Click += button4_Click;
+            // 
+            // button3
+            // 
+            button3.Click += button3_Click;
+            // 
             // button5
             // 
             button5.Click += button5_Click;
+            // 
+            // button2
+            // 
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.Click += button1_Click;
             // 
             // label5
             // 
