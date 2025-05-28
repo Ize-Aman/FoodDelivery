@@ -92,3 +92,5 @@ G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\D
 g:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Restaurants.resources
 G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Drivers.resources
 G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Users.resources
+g:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurant1.resources
+g:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurant2.resources

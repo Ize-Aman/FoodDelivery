@@ -56,7 +56,12 @@ namespace FinalProject
         //each restaurants as a card
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            new Restaurant1().ShowDialog();
+        }
 
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            new Restaurant2().ShowDialog();
         }
     }
 }
