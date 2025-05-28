@@ -59,6 +59,7 @@
             panel1.Controls.Add(label7);
             panel1.Controls.Add(textBox5);
             panel1.Controls.Add(label6);
+            panel1.Controls.SetChildIndex(button6, 0);
             panel1.Controls.SetChildIndex(label2, 0);
             panel1.Controls.SetChildIndex(textBox1, 0);
             panel1.Controls.SetChildIndex(label3, 0);
@@ -133,6 +134,11 @@
             // button4
             // 
             button4.Text = "Total Customers";
+            button4.Click += button4_Click;
+            // 
+            // button3
+            // 
+            button3.Click += button3_Click;
             // 
             // button5
             // 
@@ -145,6 +151,10 @@
             // button1
             // 
             button1.Click += button1_Click;
+            // 
+            // textBox11
+            // 
+            textBox11.TextChanged += textBox11_TextChanged;
             // 
             // label5
             // 

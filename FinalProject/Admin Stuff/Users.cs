@@ -94,7 +94,7 @@ namespace FinalProject.Admin_Stuff
             userType = textBox10.Text.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //insert button
         {
             SqlConnection con = new SqlConnection(conString);
             con.Open();
@@ -135,7 +135,7 @@ namespace FinalProject.Admin_Stuff
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //insert button
         {
             SqlConnection con = new SqlConnection(conString);
             con.Open();
@@ -146,7 +146,6 @@ namespace FinalProject.Admin_Stuff
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
-                // Assume these are your textboxes or variables:
                 if (!string.IsNullOrWhiteSpace(userName))
                 {
                     updates.Add("UserName = @userName");
@@ -223,7 +222,69 @@ namespace FinalProject.Admin_Stuff
                 {
                     MessageBox.Show("Unexpected error occurred: " + ex.Message);
                 }
+                con.Close();
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e) //delete button
+        {
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
+
+            if (con.State == System.Data.ConnectionState.Open)
+            {
+                string query = "DELETE FROM Users WHERE UserID = @userID";
+                SqlCommand cmd = new SqlCommand(query, con);
+
+                cmd.Parameters.AddWithValue("@userID", userID);
+
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Deleted Successfully");
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Please enter the correct value");
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Error in the database" + ex);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Unexpected error occured" + ex);
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(conString);
+            con.Open();
+            int count = 0;
+
+            if (con.State == System.Data.ConnectionState.Open)
+            {
+                string query = "SELECT COUNT(*) FROM Users";
+                SqlCommand cmd = new SqlCommand(query, con);
+
+                try
+                {
+                    count = count = (int)cmd.ExecuteScalar();
+                    textBox11.Text = count.ToString();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Unexpected error occured");
+                }
+            }
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

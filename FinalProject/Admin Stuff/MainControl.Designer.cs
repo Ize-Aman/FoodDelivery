@@ -47,6 +47,7 @@
             textBox1 = new TextBox();
             label2 = new Label();
             dataGridView1 = new DataGridView();
+            button6 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -58,6 +59,7 @@
             panel1.Controls.Add(label5);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
+            panel1.Controls.Add(button6);
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
@@ -247,6 +249,19 @@
             dataGridView1.Size = new Size(1013, 285);
             dataGridView1.TabIndex = 12;
             // 
+            // button6
+            // 
+            button6.BackColor = Color.White;
+            button6.Cursor = Cursors.Hand;
+            button6.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.Location = new Point(562, 317);
+            button6.Name = "button6";
+            button6.Size = new Size(112, 34);
+            button6.TabIndex = 9;
+            button6.Text = "Clear";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
             // MainControl
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -284,5 +299,6 @@
         public TextBox textBox11;
         public DataGridView dataGridView1;
         public Label label5;
+        public Button button6;
     }
 }
