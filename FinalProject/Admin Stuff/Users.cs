@@ -140,10 +140,90 @@ namespace FinalProject.Admin_Stuff
             SqlConnection con = new SqlConnection(conString);
             con.Open();
 
-            //if (con.State == System.Data.ConnectionState.Open)
-            //{
-            //    string query = @"UPDATE Users SET UserName = @userName, Password = @";
-            //}
+            if (con.State == System.Data.ConnectionState.Open)
+            {
+                List<string> updates = new List<string>();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+
+                // Assume these are your textboxes or variables:
+                if (!string.IsNullOrWhiteSpace(userName))
+                {
+                    updates.Add("UserName = @userName");
+                    cmd.Parameters.AddWithValue("@userName", userName);
+                }
+                if (!string.IsNullOrWhiteSpace(password))
+                {
+                    updates.Add("Password = @password");
+                    cmd.Parameters.AddWithValue("@password", password);
+                }
+                if (!string.IsNullOrWhiteSpace(firstName))
+                {
+                    updates.Add("F_Name = @firstName");
+                    cmd.Parameters.AddWithValue("@firstName", firstName);
+                }
+                if (!string.IsNullOrWhiteSpace(lastName))
+                {
+                    updates.Add("L_Name = @lastName");
+                    cmd.Parameters.AddWithValue("@lastName", lastName);
+                }
+                if (!string.IsNullOrWhiteSpace(phone))
+                {
+                    updates.Add("Phone = @phone");
+                    cmd.Parameters.AddWithValue("@phone", phone);
+                }
+                if (!string.IsNullOrWhiteSpace(email))
+                {
+                    updates.Add("Email = @email");
+                    cmd.Parameters.AddWithValue("@email", email);
+                }
+                if (!string.IsNullOrWhiteSpace(gender))
+                {
+                    updates.Add("Gender = @gender");
+                    cmd.Parameters.AddWithValue("@gender", gender);
+                }
+                if (!string.IsNullOrWhiteSpace(address))
+                {
+                    updates.Add("Address = @address");
+                    cmd.Parameters.AddWithValue("@address", address);
+                }
+                if (!string.IsNullOrWhiteSpace(userType))
+                {
+                    updates.Add("UserType = @userType");
+                    cmd.Parameters.AddWithValue("@userType", userType);
+                }
+
+                if (updates.Count == 0)
+                {
+                    MessageBox.Show("Please enter at least one field to update.");
+                    return;
+                }
+
+                // Add WHERE clause
+                cmd.Parameters.AddWithValue("@userID", userID);
+
+                string updateClause = string.Join(", ", updates);
+                string query = $"UPDATE Users SET {updateClause} WHERE UserID = @userID";
+                cmd.CommandText = query;
+
+                try
+                {
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    MessageBox.Show(rowsAffected > 0 ? "Updated successfully!" : "No user found with the given ID.");
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Please enter the correct value.");
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Error in the database: " + ex.Message);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Unexpected error occurred: " + ex.Message);
+                }
+            }
         }
     }
 }
