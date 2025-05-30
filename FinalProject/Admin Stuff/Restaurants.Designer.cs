@@ -63,9 +63,17 @@
             // 
             button4.Text = "Total Restaurants";
             // 
+            // button3
+            // 
+            button3.Click += button3_Click;
+            // 
             // button5
             // 
             button5.Click += button5_Click;
+            // 
+            // button1
+            // 
+            button1.Click += button1_Click;
             // 
             // label5
             // 

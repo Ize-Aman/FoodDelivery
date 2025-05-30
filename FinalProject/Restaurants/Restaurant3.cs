@@ -7,100 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Data;
 using Microsoft.Data.SqlClient;
 
-namespace FinalProject
+namespace FinalProject.Restaurants
 {
-    public partial class Restaurant1 : Form
+    public partial class Restaurant3 : Restaurant1
     {
-        public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
-        public Restaurant1()
+        public Restaurant3()
         {
             InitializeComponent();
         }
 
-        private void Restaurant1_Load(object sender, EventArgs e)
-        {
-            for (int i = 0; i < 10; i++)
-            {
-                comboBoxLasagna.Items.Add(i);
-                comboBoxPizza.Items.Add(i);
-                comboBoxBurger.Items.Add(i);
-                comboBoxFanta.Items.Add(i);
-
-            }
-            comboBoxLasagna.SelectedIndex = 0;
-            comboBoxPizza.SelectedIndex = 0;
-            comboBoxBurger.SelectedIndex = 0;
-            comboBoxFanta.SelectedIndex = 0;
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void Restaurant3_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBoxLazagna_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Parse values from TextBoxes
-                int customerId = Login.LoggedInUserID;
-                int restaurantId = CustomerLanding.SelectedRestaurantID;
-                decimal totalCost = decimal.Parse(textBoxTotal.Text, System.Globalization.NumberStyles.Currency);
-
-                // Your connection string (adjust Data Source and Initial Catalog if needed)
-
-                using (SqlConnection con = new SqlConnection(conString))
-                {
-                    con.Open();
-
-                    string query = "INSERT INTO [Order] (CustomerID, RestaurantID, TotalCost) VALUES (@CustomerID, @RestaurantID, @TotalCost)";
-
-                    using (SqlCommand cmd = new SqlCommand(query, con))
-                    {
-                        cmd.Parameters.AddWithValue("@CustomerID", customerId);
-                        cmd.Parameters.AddWithValue("@RestaurantID", restaurantId);
-                        cmd.Parameters.AddWithValue("@TotalCost", totalCost);
-
-                        int rows = cmd.ExecuteNonQuery();
-
-                        if (rows > 0)
-                            MessageBox.Show("Order confirmed and saved to database.");
-                        else
-                            MessageBox.Show("No data inserted.");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error confirming order: " + ex.Message);
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonTotal_Click(object sender, EventArgs e)
         {
             try
             {
@@ -154,39 +77,6 @@ namespace FinalProject
             {
                 MessageBox.Show("Something went wrong: " + ex.Message);
             }
-
-        }
-
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void comboBoxLasagna_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBoxPizza_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelPriceLazagna_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonReset_Click(object sender, EventArgs e)
@@ -207,21 +97,52 @@ namespace FinalProject
             textBoxSubTotal.Clear();
             textBoxTax.Clear();
             textBoxTotal.Clear();
-            
-            
+
+
 
             // Clear receipt
             richTextBoxRecepit.Clear();
         }
 
-        private void labelSubTotal_Click(object sender, EventArgs e)
+        private void buttonConfirm_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Parse values from TextBoxes
+                int customerId = Login.LoggedInUserID;
+                int restaurantId = CustomerLanding.SelectedRestaurantID;
+                decimal totalCost = decimal.Parse(textBoxTotal.Text, System.Globalization.NumberStyles.Currency);
 
-        }
+                // Your connection string (adjust Data Source and Initial Catalog if needed)
+                string connectionString = "Data Source=DESKTOP-FNTB2VP;Initial Catalog=CSDB;Integrated Security=True;Trust Server Certificate=True";
 
-        private void label1_Click_3(object sender, EventArgs e)
-        {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    con.Open();
 
+                    string query = "INSERT INTO [Order] (CustomerID, RestaurantID, TotalCost) VALUES (@CustomerID, @RestaurantID, @TotalCost)";
+
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@CustomerID", customerId);
+                        cmd.Parameters.AddWithValue("@RestaurantID", restaurantId);
+                        cmd.Parameters.AddWithValue("@TotalCost", totalCost);
+
+                        int rows = cmd.ExecuteNonQuery();
+
+                        if (rows > 0)
+                            MessageBox.Show("Order confirmed and saved to database.");
+                        else
+                            MessageBox.Show("No data inserted.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error confirming order: " + ex.Message);
+            }
         }
     }
 }
+    
+

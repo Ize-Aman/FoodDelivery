@@ -94,3 +94,159 @@ G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\D
 G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Users.resources
 g:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurant1.resources
 g:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurant2.resources
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\FinalProject.exe
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\FinalProject.deps.json
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\FinalProject.runtimeconfig.json
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\FinalProject.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\FinalProject.pdb
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.csproj.AssemblyReference.cache
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.AdminLanding.resources
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Drivers.resources
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.MainControl.resources
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Orders.resources
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Restaurants.resources
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Users.resources
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.CustomerLanding.resources
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Login.resources
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Register.resources
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Properties.Resources.resources
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurant1.resources
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurant2.resources
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.csproj.GenerateResource.cache
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.AssemblyInfoInputs.cache
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.AssemblyInfo.cs
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.csproj.CoreCompileInputs.cache
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.sourcelink.json
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalPro.8C09D514.Up2Date
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\refint\FinalProject.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.pdb
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.genruntimeconfig.cache
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\ref\FinalProject.dll
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurants.Restaurant3.resources
+C:\Users\win\Desktop\FinalProject2Zip\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurants.Restaurant4.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\FinalProject.exe
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\FinalProject.deps.json
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\FinalProject.runtimeconfig.json
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\FinalProject.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\FinalProject.pdb
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Azure.Core.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Azure.Identity.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\System.ClientModel.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\System.Memory.Data.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.csproj.AssemblyReference.cache
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.AdminLanding.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Drivers.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.MainControl.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Orders.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Restaurants.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Users.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.CustomerLanding.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Login.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Register.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Properties.Resources.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurant1.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurant2.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurants.Restaurant3.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurants.Restaurant4.resources
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.csproj.GenerateResource.cache
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.GeneratedMSBuildEditorConfig.editorconfig
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.AssemblyInfoInputs.cache
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.AssemblyInfo.cs
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.csproj.CoreCompileInputs.cache
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.sourcelink.json
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalPro.8C09D514.Up2Date
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\refint\FinalProject.dll
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.pdb
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.genruntimeconfig.cache
+G:\School stuff\C#\Final Project\Hilawe's\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\ref\FinalProject.dll

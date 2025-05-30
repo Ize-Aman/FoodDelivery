@@ -18,5 +18,10 @@ namespace FinalProject.Admin_Stuff
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

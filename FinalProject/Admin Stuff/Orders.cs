@@ -13,7 +13,7 @@ namespace FinalProject.Admin_Stuff
 {
     public partial class Orders : MainControl
     {
-        public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
+        public string conString = "Data Source=DESKTOP-FNTB2VP;Initial Catalog=CSDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
 
         public Orders()
         {

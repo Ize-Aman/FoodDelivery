@@ -15,8 +15,8 @@ namespace FinalProject
     {
         private Login _loginForm;
         private string username, password, firstname, lastname, address, email, phone;
-        public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
-        
+        public string conString = "Data Source=DESKTOP-FNTB2VP;Initial Catalog=CSDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+
         public Register(Login loginForm) //constructor for logout button and initialize components
         {
             InitializeComponent();
@@ -58,11 +58,11 @@ namespace FinalProject
                 {
                     MessageBox.Show("Please enter the correct value\n");
                 }
-                catch(SqlException ex)
+                catch (SqlException ex)
                 {
                     MessageBox.Show("incorrect value entered or there was an Error in the database\n" + ex);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show("Unexpected error occured\n" + ex);
                 }
@@ -108,6 +108,11 @@ namespace FinalProject
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
             email = textBox7.Text.ToString();
+        }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

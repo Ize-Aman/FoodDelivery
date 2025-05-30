@@ -302,6 +302,7 @@
             Name = "Register";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += Register_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();

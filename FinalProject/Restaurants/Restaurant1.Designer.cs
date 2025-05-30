@@ -67,10 +67,6 @@
             comboBoxFanta = new ComboBox();
             labelPurchaseFanta = new Label();
             checkBoxFanta = new CheckBox();
-            labelRestaurantID = new Label();
-            textBoxRestaurantID = new TextBox();
-            labelCustomerID = new Label();
-            textBoxCustomerID = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLazagna).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxPizza).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxBurger).BeginInit();
@@ -426,50 +422,12 @@
             checkBoxFanta.TabIndex = 37;
             checkBoxFanta.UseVisualStyleBackColor = true;
             // 
-            // labelRestaurantID
-            // 
-            labelRestaurantID.AutoSize = true;
-            labelRestaurantID.Location = new Point(745, 34);
-            labelRestaurantID.Name = "labelRestaurantID";
-            labelRestaurantID.Size = new Size(113, 25);
-            labelRestaurantID.TabIndex = 38;
-            labelRestaurantID.Text = "RestaurantID";
-            // 
-            // textBoxRestaurantID
-            // 
-            textBoxRestaurantID.Location = new Point(875, 28);
-            textBoxRestaurantID.Name = "textBoxRestaurantID";
-            textBoxRestaurantID.ReadOnly = true;
-            textBoxRestaurantID.Size = new Size(92, 31);
-            textBoxRestaurantID.TabIndex = 39;
-            textBoxRestaurantID.Text = "1";
-            // 
-            // labelCustomerID
-            // 
-            labelCustomerID.AutoSize = true;
-            labelCustomerID.Location = new Point(745, 94);
-            labelCustomerID.Name = "labelCustomerID";
-            labelCustomerID.Size = new Size(107, 25);
-            labelCustomerID.TabIndex = 40;
-            labelCustomerID.Text = "CustomerID";
-            // 
-            // textBoxCustomerID
-            // 
-            textBoxCustomerID.Location = new Point(875, 88);
-            textBoxCustomerID.Name = "textBoxCustomerID";
-            textBoxCustomerID.Size = new Size(92, 31);
-            textBoxCustomerID.TabIndex = 41;
-            // 
             // Restaurant1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonShadow;
             ClientSize = new Size(1366, 1050);
-            Controls.Add(textBoxCustomerID);
-            Controls.Add(labelCustomerID);
-            Controls.Add(textBoxRestaurantID);
-            Controls.Add(labelRestaurantID);
             Controls.Add(checkBoxFanta);
             Controls.Add(labelPurchaseFanta);
             Controls.Add(comboBoxFanta);
@@ -521,47 +479,43 @@
 
         #endregion
 
-        private PictureBox pictureBoxLazagna;
-        private Label labelLazagna;
-        private Label labelPriceLazagna;
-        private Label labelQuantityLazagna;
-        private Label labelPurchaseLasagna;
-        private ComboBox comboBoxLasagna;
-        private CheckBox checkBoxLazagna;
-        private PictureBox pictureBoxPizza;
-        private Label labelPizza;
-        private Label labelPricePizza;
-        private Label labelQuantityPizza;
-        private ComboBox comboBoxPizza;
-        private Label labelPurchasePizza;
-        private CheckBox checkBoxPizza;
-        private RichTextBox richTextBoxRecepit;
-        private Label labelTax;
-        private Label labelSubTotal;
-        private Label labelTotal;
-        private TextBox textBoxTax;
-        private TextBox textBoxSubTotal;
-        private TextBox textBoxTotal;
-        private Button buttonTotal;
-        private Button buttonReset;
-        private Button buttonConfirm;
-        private PictureBox pictureBoxBurger;
-        private Label labelBurger;
-        private Label labelPriceBurger;
-        private Label labelQuantityBurger;
-        private CheckBox checkBoxBurger;
-        private ComboBox comboBoxBurger;
-        private Label labelPurchaseBurger;
-        private PictureBox pictureBoxFanta;
-        private Label labelFanta;
-        private Label labelPriceFanta;
-        private Label labelQuantityFanta;
-        private ComboBox comboBoxFanta;
-        private Label labelPurchaseFanta;
-        private CheckBox checkBoxFanta;
-        private Label labelRestaurantID;
-        private TextBox textBoxRestaurantID;
-        private Label labelCustomerID;
-        private TextBox textBoxCustomerID;
+        protected PictureBox pictureBoxLazagna;
+        protected Label labelLazagna;
+        protected Label labelPriceLazagna;
+        protected Label labelQuantityLazagna;
+        protected Label labelPurchaseLasagna;
+        protected ComboBox comboBoxLasagna;
+        protected CheckBox checkBoxLazagna;
+        protected PictureBox pictureBoxPizza;
+        protected Label labelPizza;
+        protected Label labelPricePizza;
+        protected Label labelQuantityPizza;
+        protected ComboBox comboBoxPizza;
+        protected Label labelPurchasePizza;
+        protected CheckBox checkBoxPizza;
+        protected RichTextBox richTextBoxRecepit;
+        protected Label labelTax;
+        protected Label labelSubTotal;
+        protected Label labelTotal;
+        protected TextBox textBoxTax;
+        protected TextBox textBoxSubTotal;
+        protected TextBox textBoxTotal;
+        protected Button buttonTotal;
+        protected Button buttonReset;
+        protected Button buttonConfirm;
+        protected PictureBox pictureBoxBurger;
+        protected Label labelBurger;
+        protected Label labelPriceBurger;
+        protected Label labelQuantityBurger;
+        protected CheckBox checkBoxBurger;
+        protected ComboBox comboBoxBurger;
+        protected Label labelPurchaseBurger;
+        protected PictureBox pictureBoxFanta;
+        protected Label labelFanta;
+        protected Label labelPriceFanta;
+        protected Label labelQuantityFanta;
+        protected ComboBox comboBoxFanta;
+        protected Label labelPurchaseFanta;
+        protected CheckBox checkBoxFanta;
     }
 }

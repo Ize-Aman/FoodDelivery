@@ -13,7 +13,7 @@ namespace FinalProject.Admin_Stuff
 {
     public partial class Restaurants : MainControl
     {
-        public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
+        public string conString = "Data Source=DESKTOP-FNTB2VP;Initial Catalog=CSDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
         public Restaurants()
         {
             InitializeComponent();
@@ -41,6 +41,16 @@ namespace FinalProject.Admin_Stuff
             {
                 MessageBox.Show("Unexpected error occured...\n" + ex);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

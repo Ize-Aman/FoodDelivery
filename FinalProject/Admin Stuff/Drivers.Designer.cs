@@ -101,6 +101,10 @@
             // 
             button4.Text = "Total Drivers";
             // 
+            // button3
+            // 
+            button3.Click += button3_Click;
+            // 
             // button5
             // 
             button5.Click += button5_Click;

@@ -14,7 +14,7 @@ namespace FinalProject.Admin_Stuff
 {
     public partial class Users : MainControl
     {
-        public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
+        public string conString = "Data Source=DESKTOP-FNTB2VP;Initial Catalog=CSDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
         private string userID, userName, password, firstName, lastName, phone, email, gender, address, userType;
         public Users()
         {
