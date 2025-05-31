@@ -32,6 +32,7 @@ namespace FinalProject
         {
             InitializeComponent();
             _registerForm = registerForm;
+            this.MaximizeBox = false;
         }
 
         public CustomerLanding(Register _registerForm, Login _loginForm)
@@ -39,11 +40,13 @@ namespace FinalProject
             InitializeComponent();
             this._loginForm = _loginForm;
             this._registerForm = _registerForm;
+            this.MaximizeBox = false;
         }
 
         public CustomerLanding()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
         }
 
         //CONSTRUCTORS END HERE
