@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerLanding));
             panel1 = new Panel();
             pictureBox10 = new PictureBox();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
+            labelBurgerTown = new Label();
+            labelTacoHaven = new Label();
+            labelSuchiWorld = new Label();
+            labelPizzaPalace = new Label();
             pictureBox9 = new PictureBox();
             pictureBox8 = new PictureBox();
             pictureBox7 = new PictureBox();
@@ -63,10 +63,10 @@
             panel1.AutoScroll = true;
             panel1.BackColor = Color.FromArgb(57, 57, 57);
             panel1.Controls.Add(pictureBox10);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(labelBurgerTown);
+            panel1.Controls.Add(labelTacoHaven);
+            panel1.Controls.Add(labelSuchiWorld);
+            panel1.Controls.Add(labelPizzaPalace);
             panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(pictureBox8);
             panel1.Controls.Add(pictureBox7);
@@ -93,49 +93,49 @@
             pictureBox10.TabStop = false;
             pictureBox10.Click += pictureBox10_Click;
             // 
-            // label4
+            // labelBurgerTown
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.FromArgb(245, 212, 193);
-            label4.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(84, 826);
-            label4.Name = "label4";
-            label4.Size = new Size(136, 38);
-            label4.TabIndex = 3;
-            label4.Text = "Pizza Hut";
+            labelBurgerTown.AutoSize = true;
+            labelBurgerTown.BackColor = Color.FromArgb(245, 212, 193);
+            labelBurgerTown.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelBurgerTown.Location = new Point(84, 826);
+            labelBurgerTown.Name = "labelBurgerTown";
+            labelBurgerTown.Size = new Size(176, 38);
+            labelBurgerTown.TabIndex = 3;
+            labelBurgerTown.Text = "Burger Town";
             // 
-            // label3
+            // labelTacoHaven
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.FromArgb(245, 212, 193);
-            label3.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(384, 826);
-            label3.Name = "label3";
-            label3.Size = new Size(136, 38);
-            label3.TabIndex = 3;
-            label3.Text = "Pizza Hut";
+            labelTacoHaven.AutoSize = true;
+            labelTacoHaven.BackColor = Color.FromArgb(245, 212, 193);
+            labelTacoHaven.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelTacoHaven.Location = new Point(384, 826);
+            labelTacoHaven.Name = "labelTacoHaven";
+            labelTacoHaven.Size = new Size(163, 38);
+            labelTacoHaven.TabIndex = 3;
+            labelTacoHaven.Text = "Taco Haven";
             // 
-            // label2
+            // labelSuchiWorld
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(245, 212, 193);
-            label2.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(384, 481);
-            label2.Name = "label2";
-            label2.Size = new Size(136, 38);
-            label2.TabIndex = 3;
-            label2.Text = "Pizza Hut";
+            labelSuchiWorld.AutoSize = true;
+            labelSuchiWorld.BackColor = Color.FromArgb(245, 212, 193);
+            labelSuchiWorld.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelSuchiWorld.Location = new Point(384, 481);
+            labelSuchiWorld.Name = "labelSuchiWorld";
+            labelSuchiWorld.Size = new Size(168, 38);
+            labelSuchiWorld.TabIndex = 3;
+            labelSuchiWorld.Text = "Sushi World";
             // 
-            // label1
+            // labelPizzaPalace
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(245, 212, 193);
-            label1.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(84, 481);
-            label1.Name = "label1";
-            label1.Size = new Size(136, 38);
-            label1.TabIndex = 3;
-            label1.Text = "Pizza Hut";
+            labelPizzaPalace.AutoSize = true;
+            labelPizzaPalace.BackColor = Color.FromArgb(245, 212, 193);
+            labelPizzaPalace.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelPizzaPalace.Location = new Point(84, 481);
+            labelPizzaPalace.Name = "labelPizzaPalace";
+            labelPizzaPalace.Size = new Size(169, 38);
+            labelPizzaPalace.TabIndex = 3;
+            labelPizzaPalace.Text = "Pizza Palace";
             // 
             // pictureBox9
             // 
@@ -147,6 +147,7 @@
             pictureBox9.Size = new Size(138, 135);
             pictureBox9.TabIndex = 2;
             pictureBox9.TabStop = false;
+            pictureBox9.Click += pictureBox9_Click;
             // 
             // pictureBox8
             // 
@@ -158,6 +159,7 @@
             pictureBox8.Size = new Size(138, 135);
             pictureBox8.TabIndex = 2;
             pictureBox8.TabStop = false;
+            pictureBox8.Click += pictureBox8_Click;
             // 
             // pictureBox7
             // 
@@ -223,9 +225,9 @@
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-7, 0);
+            pictureBox1.Location = new Point(0, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(609, 831);
+            pictureBox1.Size = new Size(583, 483);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -256,20 +258,20 @@
         #endregion
 
         private Panel panel1;
-        private PictureBox pictureBox1;
         private Button button1;
         private PictureBox pictureBox6;
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
-        private Label label4;
-        private Label label3;
-        private Label label2;
-        private Label label1;
+        private Label labelBurgerTown;
+        private Label labelTacoHaven;
+        private Label labelSuchiWorld;
+        private Label labelPizzaPalace;
         private PictureBox pictureBox9;
         private PictureBox pictureBox8;
         private PictureBox pictureBox7;
         private PictureBox pictureBox10;
+        private PictureBox pictureBox1;
     }
 }

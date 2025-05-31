@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,7 @@ namespace FinalProject
         private Login _loginForm;
         private Register _registerForm;
         public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
-
+        public static int SelectedRestaurantID;
 
         //the following constructors are used so that the logout button works perfectly and to initialize components
 
@@ -40,6 +41,11 @@ namespace FinalProject
             this._registerForm = _registerForm;
         }
 
+        public CustomerLanding()
+        {
+            InitializeComponent();
+        }
+
         //CONSTRUCTORS END HERE
 
         private void pictureBox10_Click(object sender, EventArgs e) //logout button
@@ -58,12 +64,135 @@ namespace FinalProject
         //each restaurants as a card
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            new Restaurant1().ShowDialog();
+            string restaurantName = labelPizzaPalace.Text;
+
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                string query = "SELECT RestaurantID FROM Restaurant WHERE Name = @name";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@name", restaurantName);
+
+                try
+                {
+                    con.Open();
+                    object result = cmd.ExecuteScalar();
+                    if (result != null)
+                    {
+                        SelectedRestaurantID = Convert.ToInt32(result);
+                        MessageBox.Show("Restaurant selected! ID: " + SelectedRestaurantID);
+
+                        // Open the Restaurant form (Confirm button is here)
+                        new Restaurant1().ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Restaurant not found in the database.");
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Database error:\n" + ex.Message);
+                }
+            }
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            new Restaurant2().ShowDialog();
+            string restaurantName = labelSuchiWorld.Text;
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                string query = "SELECT RestaurantID FROM Restaurant WHERE Name = @name";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@name", restaurantName);
+
+                try
+                {
+                    con.Open();
+                    object result = cmd.ExecuteScalar();
+                    if (result != null)
+                    {
+                        SelectedRestaurantID = Convert.ToInt32(result);
+                        MessageBox.Show("Restaurant selected! ID: " + SelectedRestaurantID);
+
+                        // Open the Restaurant form (Confirm button is here)
+                        new Restaurant1().ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Restaurant not found in the database.");
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Database error:\n" + ex.Message);
+                }
+            }
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            string restaurantName = labelBurgerTown.Text;
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                string query = "SELECT RestaurantID FROM Restaurant WHERE Name = @name";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@name", restaurantName);
+
+                try
+                {
+                    con.Open();
+                    object result = cmd.ExecuteScalar();
+                    if (result != null)
+                    {
+                        SelectedRestaurantID = Convert.ToInt32(result);
+                        MessageBox.Show("Restaurant selected!");
+
+                        // Open the Restaurant form (Confirm button is here)
+                        new Restaurant1().ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Restaurant not found in the database.");
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Database error:\n" + ex.Message);
+                }
+            }
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            string restaurantName = labelTacoHaven.Text;
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                string query = "SELECT RestaurantID FROM Restaurant WHERE Name = @name";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@name", restaurantName);
+
+                try
+                {
+                    con.Open();
+                    object result = cmd.ExecuteScalar();
+                    if (result != null)
+                    {
+                        SelectedRestaurantID = Convert.ToInt32(result);
+                        MessageBox.Show("Restaurant selected!");
+
+                        // Open the Restaurant form (Confirm button is here)
+                        new Restaurant1().ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Restaurant not found in the database.");
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Database error:\n" + ex.Message);
+                }
+            }
         }
     }
 }
