@@ -1,6 +1,6 @@
-﻿namespace FinalProject
+﻿namespace FinalProject.Restaurants
 {
-    partial class Restaurant2
+    partial class Restaurant3
     {
         /// <summary>
         /// Required designer variable.
@@ -34,18 +34,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxFanta).BeginInit();
             SuspendLayout();
             // 
-            // labelPriceLazagna
-            // 
-            labelPriceLazagna.Size = new Size(23, 25);
-            labelPriceLazagna.Text = "q";
-            // 
             // comboBoxLasagna
             // 
-            comboBoxLasagna.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            comboBoxLasagna.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
             // 
             // comboBoxPizza
             // 
-            comboBoxPizza.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            comboBoxPizza.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
             // 
             // buttonTotal
             // 
@@ -61,20 +56,20 @@
             // 
             // comboBoxBurger
             // 
-            comboBoxBurger.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            comboBoxBurger.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
             // 
             // comboBoxFanta
             // 
-            comboBoxFanta.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            comboBoxFanta.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
             // 
-            // Restaurant2
+            // Restaurant3
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1366, 1050);
-            Name = "Restaurant2";
-            Text = "Restaurant2";
-            Load += Restaurant2_Load;
+            Name = "Restaurant3";
+            Text = "Restaurant3";
+            Load += Restaurant3_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxLazagna).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxPizza).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxBurger).EndInit();

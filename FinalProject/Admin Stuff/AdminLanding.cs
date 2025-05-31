@@ -40,7 +40,7 @@ namespace FinalProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new Restaurants().ShowDialog();
+            new AdminRestaurants().ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -48,6 +48,6 @@ namespace FinalProject
             new Drivers().ShowDialog();
         }
 
-        
+
     }
 }

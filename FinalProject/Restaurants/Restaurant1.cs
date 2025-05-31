@@ -14,6 +14,7 @@ namespace FinalProject
 {
     public partial class Restaurant1 : Form
     {
+        public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
         public Restaurant1()
         {
             InitializeComponent();
@@ -66,14 +67,13 @@ namespace FinalProject
             try
             {
                 // Parse values from TextBoxes
-                int customerId = int.Parse(textBoxCustomerID.Text);
-                int restaurantId = int.Parse(textBoxRestaurantID.Text);
+                int customerId = Login.LoggedInUserID;
+                int restaurantId = CustomerLanding.SelectedRestaurantID;
                 decimal totalCost = decimal.Parse(textBoxTotal.Text, System.Globalization.NumberStyles.Currency);
 
                 // Your connection string (adjust Data Source and Initial Catalog if needed)
-                string connectionString = "Data Source=DESKTOP-FNTB2VP;Initial Catalog=CSDB;Integrated Security=True;Trust Server Certificate=True";
 
-                using (SqlConnection con = new SqlConnection(connectionString))
+                using (SqlConnection con = new SqlConnection(conString))
                 {
                     con.Open();
 
@@ -207,7 +207,7 @@ namespace FinalProject
             textBoxSubTotal.Clear();
             textBoxTax.Clear();
             textBoxTotal.Clear();
-            textBoxCustomerID.Clear();
+            
             
 
             // Clear receipt

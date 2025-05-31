@@ -9,23 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
 
-namespace FinalProject
+namespace FinalProject.Restaurants
 {
-    public partial class Restaurant2 : Restaurant1
+    public partial class Restaurant4 : Restaurant1
     {
         public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
-
-        public Restaurant2()
+        public Restaurant4()
         {
             InitializeComponent();
         }
 
-        private void Restaurant2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxCustomerID_TextChanged(object sender, EventArgs e)
+        private void Restaurant4_Load(object sender, EventArgs e)
         {
 
         }
@@ -121,6 +115,7 @@ namespace FinalProject
                 decimal totalCost = decimal.Parse(textBoxTotal.Text, System.Globalization.NumberStyles.Currency);
 
                 // Your connection string (adjust Data Source and Initial Catalog if needed)
+
                 using (SqlConnection con = new SqlConnection(conString))
                 {
                     con.Open();
@@ -149,3 +144,5 @@ namespace FinalProject
         }
     }
 }
+    
+

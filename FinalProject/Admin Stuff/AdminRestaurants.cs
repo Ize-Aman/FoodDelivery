@@ -15,11 +15,11 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace FinalProject.Admin_Stuff
 {
-    public partial class Restaurants : MainControl
+    public partial class AdminRestaurants : MainControl
     {
         public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
         private string restaurantID, name, location, phone;
-        public Restaurants()
+        public AdminRestaurants()
         {
             InitializeComponent();
         }
