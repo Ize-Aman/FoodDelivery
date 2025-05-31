@@ -14,6 +14,8 @@ namespace FinalProject
     {
         private Login _loginForm;
         private Register _registerForm;
+        public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
+
 
         //the following constructors are used so that the logout button works perfectly and to initialize components
 

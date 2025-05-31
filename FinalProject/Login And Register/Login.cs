@@ -6,6 +6,7 @@ namespace FinalProject
         public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
         private string userName, password;
         private char userType;
+        public static int LoggedInUserID;
         public Login()
         {
             InitializeComponent();
@@ -15,52 +16,64 @@ namespace FinalProject
 
         private void button1_Click(object sender, EventArgs e) //login button
         {
-            SqlConnection con = new SqlConnection(conString);
-            con.Open();
-            if (con.State == System.Data.ConnectionState.Open)
+            using (var con = new SqlConnection(conString))
             {
-                string query = "SELECT UserType FROM Users WHERE UserName = @username AND Password = @password";
-                SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@username", userName);
-                cmd.Parameters.AddWithValue ("@Password" , password);
-
                 try
                 {
-                    var result = cmd.ExecuteScalar();
+                    con.Open();
+                    const string query = @"SELECT UserID, UserType FROM Users 
+                                        WHERE UserName = @username AND Password = @password";
 
-                    if(result != null)
+                    using (var cmd = new SqlCommand(query, con))
                     {
-                        userType = char.Parse(result.ToString());
+                        cmd.Parameters.AddWithValue("@username", userName);
+                        cmd.Parameters.AddWithValue("@password", password);
 
-                        if(userType == 'A' || userType == 'a')
+                        using (var reader = cmd.ExecuteReader())
                         {
-                            this.Hide();
-                            var AdminSide = new AdminLanding(this);
-                            AdminSide.FormClosed += (s, args) => this.Close();
-                            AdminSide.Show();
-                        }
+                            if (reader.Read())
+                            {
+                                // store the logged‐in user's ID
+                                LoggedInUserID = reader.GetInt32(0);
+                                userType = reader.GetString(1)[0];
 
-                        else if(userType == 'C' || userType == 'c')
-                        {
-                            this.Hide();
-                            var customerSide = new CustomerLanding(this);
-                            customerSide.FormClosed += (s, args) => this.Close();
-                            customerSide.Show();
+                                if (userType == 'A' || userType == 'a')
+                                {
+                                    this.Hide();
+                                    var adminSide = new AdminLanding(this);
+                                    adminSide.FormClosed += (s, args) => this.Close();
+                                    adminSide.Show();
+                                }
+                                else if (userType == 'C' || userType == 'c')
+                                {
+                                    this.Hide();
+                                    var customerSide = new CustomerLanding(this);
+                                    customerSide.FormClosed += (s, args) => this.Close();
+                                    customerSide.Show();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Unauthorized user type.", "Login Error",
+                                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Account not found, please register!", "Login Failed",
+                                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
                         }
                     }
-                    else
-                    {
-                        MessageBox.Show("Account not found, please register!");
-                    }
-                    con.Close();
                 }
                 catch (SqlException ex)
                 {
-                    MessageBox.Show("Error in the database\n" + ex);
+                    MessageBox.Show("Database error:\n" + ex.Message, "Error",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Unexpected Error occured\n" + ex);
+                    MessageBox.Show("Unexpected error:\n" + ex.Message, "Error",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
