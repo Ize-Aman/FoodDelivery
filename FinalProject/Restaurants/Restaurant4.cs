@@ -9,17 +9,44 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
 
-namespace FinalProject.Restaurants
+namespace FinalProject
 {
     public partial class Restaurant4 : Restaurant1
     {
         public string conString = "Data Source=DESKTOP-BFUHDVD;Initial Catalog=CSDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
+
         public Restaurant4()
         {
             InitializeComponent();
         }
 
-        private void Restaurant4_Load(object sender, EventArgs e)
+        private void Restaurant5_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                comboBoxLasagna.Items.Add(i);
+                comboBoxPizza.Items.Add(i);
+                comboBoxBurger.Items.Add(i);
+                comboBoxFanta.Items.Add(i);
+
+            }
+            comboBoxLasagna.SelectedIndex = 0;
+            comboBoxPizza.SelectedIndex = 0;
+            comboBoxBurger.SelectedIndex = 0;
+            comboBoxFanta.SelectedIndex = 0;
+        }
+
+        private void pictureBoxPizza_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxLazagna_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxFanta_Click(object sender, EventArgs e)
         {
 
         }
@@ -28,11 +55,11 @@ namespace FinalProject.Restaurants
         {
             try
             {
-                // Updated Prices
-                double pricePizza = 3.0;
-                double priceLasagna = 6.0;
-                double priceBurger = 5.0;   // Updated
-                double priceFanta = 1.0;    // Updated
+
+                double pricePizza = 6.0;
+                double priceLasagna = 4.0;
+                double priceBurger = 6.0;
+                double priceFanta = 1.0;
 
                 // Quantities from ComboBoxes if checkbox is checked
                 int qtyPizza = checkBoxPizza.Checked && comboBoxPizza.SelectedItem != null
@@ -114,7 +141,7 @@ namespace FinalProject.Restaurants
                 int restaurantId = CustomerLanding.SelectedRestaurantID;
                 decimal totalCost = decimal.Parse(textBoxTotal.Text, System.Globalization.NumberStyles.Currency);
 
-                // Your connection string (adjust Data Source and Initial Catalog if needed)
+               
 
                 using (SqlConnection con = new SqlConnection(conString))
                 {
@@ -131,7 +158,7 @@ namespace FinalProject.Restaurants
                         int rows = cmd.ExecuteNonQuery();
 
                         if (rows > 0)
-                            MessageBox.Show("Order confirmed and saved to database.");
+                            MessageBox.Show("Order confirmed.");
                         else
                             MessageBox.Show("No data inserted.");
                     }
@@ -145,4 +172,5 @@ namespace FinalProject.Restaurants
     }
 }
     
+
 

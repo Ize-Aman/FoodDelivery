@@ -20,7 +20,8 @@ namespace FinalProject
             InitializeComponent();
         }
 
-        private void Restaurant1_Load(object sender, EventArgs e)
+
+        protected virtual void Restaurant1_Load(object sender, EventArgs e)
         {
             for (int i = 0; i < 10; i++)
             {
@@ -71,8 +72,6 @@ namespace FinalProject
                 int restaurantId = CustomerLanding.SelectedRestaurantID;
                 decimal totalCost = decimal.Parse(textBoxTotal.Text, System.Globalization.NumberStyles.Currency);
 
-                // Your connection string (adjust Data Source and Initial Catalog if needed)
-
                 using (SqlConnection con = new SqlConnection(conString))
                 {
                     con.Open();
@@ -88,7 +87,7 @@ namespace FinalProject
                         int rows = cmd.ExecuteNonQuery();
 
                         if (rows > 0)
-                            MessageBox.Show("Order confirmed and saved to database.");
+                            MessageBox.Show("Order confirmed.");
                         else
                             MessageBox.Show("No data inserted.");
                     }
@@ -104,11 +103,11 @@ namespace FinalProject
         {
             try
             {
-                // Updated Prices
+                
                 double pricePizza = 3.0;
                 double priceLasagna = 6.0;
-                double priceBurger = 5.0;   // Updated
-                double priceFanta = 1.0;    // Updated
+                double priceBurger = 5.0;  
+                double priceFanta = 1.0;    
 
                 // Quantities from ComboBoxes if checkbox is checked
                 int qtyPizza = checkBoxPizza.Checked && comboBoxPizza.SelectedItem != null
@@ -120,16 +119,16 @@ namespace FinalProject
                 int qtyFanta = checkBoxFanta.Checked && comboBoxFanta.SelectedItem != null
                     ? Convert.ToInt32(comboBoxFanta.SelectedItem) : 0;
 
-                // Subtotal calculation
+                
                 double subTotal = (qtyPizza * pricePizza)
                                 + (qtyLasagna * priceLasagna)
                                 + (qtyBurger * priceBurger)
                                 + (qtyFanta * priceFanta);
 
-                // Tax = 10%
+                
                 double tax = subTotal * 0.10;
 
-                // Final Total
+                
                 double total = subTotal + tax;
 
                 // Show results in TextBoxes
@@ -207,8 +206,8 @@ namespace FinalProject
             textBoxSubTotal.Clear();
             textBoxTax.Clear();
             textBoxTotal.Clear();
-            
-            
+
+
 
             // Clear receipt
             richTextBoxRecepit.Clear();
@@ -220,6 +219,11 @@ namespace FinalProject
         }
 
         private void label1_Click_3(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxFanta_Click(object sender, EventArgs e)
         {
 
         }

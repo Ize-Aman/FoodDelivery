@@ -82,9 +82,6 @@ namespace FinalProject
                     if (result != null)
                     {
                         SelectedRestaurantID = Convert.ToInt32(result);
-                        MessageBox.Show("Restaurant selected! ID: " + SelectedRestaurantID);
-
-                        // Open the Restaurant form (Confirm button is here)
                         new Restaurant1().ShowDialog();
                     }
                     else
@@ -115,10 +112,7 @@ namespace FinalProject
                     if (result != null)
                     {
                         SelectedRestaurantID = Convert.ToInt32(result);
-                        MessageBox.Show("Restaurant selected! ID: " + SelectedRestaurantID);
-
-                        // Open the Restaurant form (Confirm button is here)
-                        new Restaurant1().ShowDialog();
+                        new Restaurant2().ShowDialog();
                     }
                     else
                     {
@@ -148,10 +142,7 @@ namespace FinalProject
                     if (result != null)
                     {
                         SelectedRestaurantID = Convert.ToInt32(result);
-                        MessageBox.Show("Restaurant selected!");
-
-                        // Open the Restaurant form (Confirm button is here)
-                        new Restaurant1().ShowDialog();
+                        new Restaurant3().ShowDialog();
                     }
                     else
                     {
@@ -181,10 +172,7 @@ namespace FinalProject
                     if (result != null)
                     {
                         SelectedRestaurantID = Convert.ToInt32(result);
-                        MessageBox.Show("Restaurant selected!");
-
-                        // Open the Restaurant form (Confirm button is here)
-                        new Restaurant1().ShowDialog();
+                        new Restaurant4().ShowDialog();
                     }
                     else
                     {

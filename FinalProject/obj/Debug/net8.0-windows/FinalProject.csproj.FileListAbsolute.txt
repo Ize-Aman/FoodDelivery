@@ -93,6 +93,6 @@ G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\D
 G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.Users.resources
 g:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurant1.resources
 g:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurant2.resources
-g:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurants.Restaurant3.resources
-g:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurants.Restaurant4.resources
 g:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Admin_Stuff.AdminRestaurants.resources
+G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurant3.resources
+G:\School stuff\C#\Final Project\FinalProjectZip\FinalProject\FinalProject\obj\Debug\net8.0-windows\FinalProject.Restaurant4.resources

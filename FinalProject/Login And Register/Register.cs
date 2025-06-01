@@ -60,7 +60,14 @@ namespace FinalProject
                 }
                 catch(SqlException ex)
                 {
-                    MessageBox.Show("incorrect value entered or there was an Error in the database\n" + ex);
+                    if (ex.Number == 2627 || ex.Number == 2601) // Violation of UNIQUE constraint
+                    {
+                        MessageBox.Show("Username already exists. Please choose a different one.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("incorrect value entered or there was an Error in the database\n" + ex);
+                    }
                 }
                 catch(Exception ex)
                 {

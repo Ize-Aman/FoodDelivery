@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
 
-namespace FinalProject.Restaurants
+namespace FinalProject
 {
     public partial class Restaurant3 : Restaurant1
     {
@@ -21,18 +21,29 @@ namespace FinalProject.Restaurants
 
         private void Restaurant3_Load(object sender, EventArgs e)
         {
+            for (int i = 0; i < 10; i++)
+            {
+                comboBoxLasagna.Items.Add(i);
+                comboBoxPizza.Items.Add(i);
+                comboBoxBurger.Items.Add(i);
+                comboBoxFanta.Items.Add(i);
 
+            }
+            comboBoxLasagna.SelectedIndex = 0;
+            comboBoxPizza.SelectedIndex = 0;
+            comboBoxBurger.SelectedIndex = 0;
+            comboBoxFanta.SelectedIndex = 0;
         }
 
         private void buttonTotal_Click(object sender, EventArgs e)
         {
             try
             {
-                // Updated Prices
-                double pricePizza = 3.0;
-                double priceLasagna = 6.0;
-                double priceBurger = 5.0;   // Updated
-                double priceFanta = 1.0;    // Updated
+
+                double pricePizza = 9.0;
+                double priceLasagna = 7.0;
+                double priceBurger = 6.0;
+                double priceFanta = 3.0;
 
                 // Quantities from ComboBoxes if checkbox is checked
                 int qtyPizza = checkBoxPizza.Checked && comboBoxPizza.SelectedItem != null
@@ -50,7 +61,7 @@ namespace FinalProject.Restaurants
                                 + (qtyBurger * priceBurger)
                                 + (qtyFanta * priceFanta);
 
-                // Tax = 10%
+               
                 double tax = subTotal * 0.10;
 
                 // Final Total
@@ -114,8 +125,7 @@ namespace FinalProject.Restaurants
                 int restaurantId = CustomerLanding.SelectedRestaurantID;
                 decimal totalCost = decimal.Parse(textBoxTotal.Text, System.Globalization.NumberStyles.Currency);
 
-                // Your connection string (adjust Data Source and Initial Catalog if needed)
-
+                
                 using (SqlConnection con = new SqlConnection(conString))
                 {
                     con.Open();
@@ -131,7 +141,7 @@ namespace FinalProject.Restaurants
                         int rows = cmd.ExecuteNonQuery();
 
                         if (rows > 0)
-                            MessageBox.Show("Order confirmed and saved to database.");
+                            MessageBox.Show("Order confirmed.");
                         else
                             MessageBox.Show("No data inserted.");
                     }
@@ -145,4 +155,3 @@ namespace FinalProject.Restaurants
     }
 }
     
-

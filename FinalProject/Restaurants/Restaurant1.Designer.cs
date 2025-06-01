@@ -76,9 +76,9 @@
             // pictureBoxLazagna
             // 
             pictureBoxLazagna.Image = (Image)resources.GetObject("pictureBoxLazagna.Image");
-            pictureBoxLazagna.Location = new Point(78, 28);
+            pictureBoxLazagna.Location = new Point(475, 28);
             pictureBoxLazagna.Name = "pictureBoxLazagna";
-            pictureBoxLazagna.Size = new Size(294, 173);
+            pictureBoxLazagna.Size = new Size(247, 173);
             pictureBoxLazagna.TabIndex = 0;
             pictureBoxLazagna.TabStop = false;
             pictureBoxLazagna.Click += pictureBoxLazagna_Click;
@@ -143,9 +143,9 @@
             // 
             pictureBoxPizza.BackColor = SystemColors.Control;
             pictureBoxPizza.Image = (Image)resources.GetObject("pictureBoxPizza.Image");
-            pictureBoxPizza.Location = new Point(496, 28);
+            pictureBoxPizza.Location = new Point(95, 28);
             pictureBoxPizza.Name = "pictureBoxPizza";
-            pictureBoxPizza.Size = new Size(226, 202);
+            pictureBoxPizza.Size = new Size(241, 173);
             pictureBoxPizza.TabIndex = 7;
             pictureBoxPizza.TabStop = false;
             pictureBoxPizza.Click += pictureBoxPizza_Click;
@@ -153,7 +153,7 @@
             // labelPizza
             // 
             labelPizza.AutoSize = true;
-            labelPizza.Location = new Point(574, 233);
+            labelPizza.Location = new Point(592, 232);
             labelPizza.Name = "labelPizza";
             labelPizza.Size = new Size(51, 25);
             labelPizza.TabIndex = 8;
@@ -267,7 +267,7 @@
             // 
             // buttonTotal
             // 
-            buttonTotal.Location = new Point(812, 798);
+            buttonTotal.Location = new Point(806, 799);
             buttonTotal.Name = "buttonTotal";
             buttonTotal.Size = new Size(155, 34);
             buttonTotal.TabIndex = 21;
@@ -298,9 +298,9 @@
             // pictureBoxBurger
             // 
             pictureBoxBurger.Image = (Image)resources.GetObject("pictureBoxBurger.Image");
-            pictureBoxBurger.Location = new Point(78, 476);
+            pictureBoxBurger.Location = new Point(95, 476);
             pictureBoxBurger.Name = "pictureBoxBurger";
-            pictureBoxBurger.Size = new Size(203, 134);
+            pictureBoxBurger.Size = new Size(196, 207);
             pictureBoxBurger.TabIndex = 24;
             pictureBoxBurger.TabStop = false;
             pictureBoxBurger.UseWaitCursor = true;
@@ -308,7 +308,7 @@
             // labelBurger
             // 
             labelBurger.AutoSize = true;
-            labelBurger.Location = new Point(132, 635);
+            labelBurger.Location = new Point(132, 686);
             labelBurger.Name = "labelBurger";
             labelBurger.Size = new Size(64, 25);
             labelBurger.TabIndex = 25;
@@ -362,11 +362,12 @@
             // 
             pictureBoxFanta.BackColor = SystemColors.Control;
             pictureBoxFanta.Image = (Image)resources.GetObject("pictureBoxFanta.Image");
-            pictureBoxFanta.Location = new Point(496, 476);
+            pictureBoxFanta.Location = new Point(475, 476);
             pictureBoxFanta.Name = "pictureBoxFanta";
-            pictureBoxFanta.Size = new Size(226, 202);
+            pictureBoxFanta.Size = new Size(226, 207);
             pictureBoxFanta.TabIndex = 31;
             pictureBoxFanta.TabStop = false;
+            pictureBoxFanta.Click += pictureBoxFanta_Click;
             // 
             // labelFanta
             // 

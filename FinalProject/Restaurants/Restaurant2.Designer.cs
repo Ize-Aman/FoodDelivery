@@ -28,24 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Restaurant2));
             ((System.ComponentModel.ISupportInitialize)pictureBoxLazagna).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxPizza).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxBurger).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFanta).BeginInit();
             SuspendLayout();
             // 
+            // pictureBoxLazagna
+            // 
+            pictureBoxLazagna.Image = (Image)resources.GetObject("pictureBoxLazagna.Image");
+            pictureBoxLazagna.Location = new Point(475, 28);
+            pictureBoxLazagna.Size = new Size(247, 203);
+            pictureBoxLazagna.Click += pictureBoxLazagna_Click;
+            // 
+            // labelLazagna
+            // 
+            labelLazagna.Location = new Point(171, 242);
+            // 
             // labelPriceLazagna
             // 
-            labelPriceLazagna.Size = new Size(23, 25);
-            labelPriceLazagna.Text = "q";
+            labelPriceLazagna.Size = new Size(99, 25);
+            labelPriceLazagna.Text = "Price      $5";
             // 
             // comboBoxLasagna
             // 
-            comboBoxLasagna.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            comboBoxLasagna.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            comboBoxLasagna.SelectedIndexChanged += comboBoxLasagna_SelectedIndexChanged;
+            // 
+            // pictureBoxPizza
+            // 
+            pictureBoxPizza.Image = (Image)resources.GetObject("pictureBoxPizza.Image");
+            pictureBoxPizza.Location = new Point(78, 12);
+            pictureBoxPizza.Size = new Size(227, 203);
+            pictureBoxPizza.Click += pictureBoxPizza_Click;
+            // 
+            // labelPizza
+            // 
+            labelPizza.Location = new Point(577, 242);
+            // 
+            // labelPricePizza
+            // 
+            labelPricePizza.Text = "price;       $6";
             // 
             // comboBoxPizza
             // 
-            comboBoxPizza.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            comboBoxPizza.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            comboBoxPizza.SelectedIndexChanged += comboBoxPizza_SelectedIndexChanged;
             // 
             // buttonTotal
             // 
@@ -59,13 +88,35 @@
             // 
             buttonConfirm.Click += buttonConfirm_Click;
             // 
+            // pictureBoxBurger
+            // 
+            pictureBoxBurger.Image = (Image)resources.GetObject("pictureBoxBurger.Image");
+            pictureBoxBurger.Size = new Size(227, 184);
+            // 
+            // labelBurger
+            // 
+            labelBurger.Location = new Point(127, 692);
+            // 
+            // labelPriceBurger
+            // 
+            labelPriceBurger.Text = "price;       $4";
+            // 
             // comboBoxBurger
             // 
-            comboBoxBurger.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            comboBoxBurger.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            // 
+            // pictureBoxFanta
+            // 
+            pictureBoxFanta.Image = (Image)resources.GetObject("pictureBoxFanta.Image");
+            pictureBoxFanta.Size = new Size(226, 213);
+            // 
+            // labelPriceFanta
+            // 
+            labelPriceFanta.Text = "price;       $2";
             // 
             // comboBoxFanta
             // 
-            comboBoxFanta.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            comboBoxFanta.Items.AddRange(new object[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 });
             // 
             // Restaurant2
             // 
