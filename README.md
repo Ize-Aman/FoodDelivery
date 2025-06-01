@@ -49,6 +49,7 @@ git clone https://github.com/Ize-Aman/FoodDelivery.git
 2. Set Up the Database
 
 - Open SQL Server Management Studio (SSMS)
+- open the file DMS#3. it is included in the project
 - Run the CreateTables queries
 - Make sure your connection string matches your local database setup:
 
