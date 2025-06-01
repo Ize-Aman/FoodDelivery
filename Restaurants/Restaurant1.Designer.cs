@@ -207,6 +207,7 @@
             // 
             // richTextBoxRecepit
             // 
+            richTextBoxRecepit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             richTextBoxRecepit.Location = new Point(983, 28);
             richTextBoxRecepit.Name = "richTextBoxRecepit";
             richTextBoxRecepit.Size = new Size(381, 467);
@@ -215,6 +216,7 @@
             // 
             // labelTax
             // 
+            labelTax.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelTax.AutoSize = true;
             labelTax.Location = new Point(996, 574);
             labelTax.Name = "labelTax";
@@ -224,6 +226,7 @@
             // 
             // labelSubTotal
             // 
+            labelSubTotal.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelSubTotal.AutoSize = true;
             labelSubTotal.Location = new Point(996, 629);
             labelSubTotal.Name = "labelSubTotal";
@@ -234,6 +237,7 @@
             // 
             // labelTotal
             // 
+            labelTotal.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelTotal.AutoSize = true;
             labelTotal.Location = new Point(996, 692);
             labelTotal.Name = "labelTotal";
@@ -244,6 +248,7 @@
             // 
             // textBoxTax
             // 
+            textBoxTax.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             textBoxTax.Location = new Point(1125, 571);
             textBoxTax.Name = "textBoxTax";
             textBoxTax.Size = new Size(141, 31);
@@ -252,6 +257,7 @@
             // 
             // textBoxSubTotal
             // 
+            textBoxSubTotal.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             textBoxSubTotal.Location = new Point(1125, 629);
             textBoxSubTotal.Name = "textBoxSubTotal";
             textBoxSubTotal.Size = new Size(141, 31);
@@ -259,6 +265,7 @@
             // 
             // textBoxTotal
             // 
+            textBoxTotal.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             textBoxTotal.Location = new Point(1125, 686);
             textBoxTotal.Name = "textBoxTotal";
             textBoxTotal.Size = new Size(141, 31);
@@ -267,6 +274,7 @@
             // 
             // buttonTotal
             // 
+            buttonTotal.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonTotal.Location = new Point(806, 799);
             buttonTotal.Name = "buttonTotal";
             buttonTotal.Size = new Size(155, 34);
@@ -277,6 +285,7 @@
             // 
             // buttonReset
             // 
+            buttonReset.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonReset.Location = new Point(1010, 797);
             buttonReset.Name = "buttonReset";
             buttonReset.Size = new Size(166, 34);
@@ -287,6 +296,7 @@
             // 
             // buttonConfirm
             // 
+            buttonConfirm.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonConfirm.Location = new Point(1204, 798);
             buttonConfirm.Name = "buttonConfirm";
             buttonConfirm.Size = new Size(150, 34);
