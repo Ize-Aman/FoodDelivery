@@ -99,9 +99,8 @@ Name VARCHAR(100),
 Phone VARCHAR(10),
 ```
 
-## 📸 Screenshots (Optional)
+## 📸 Screenshots
 
-If you want to add screenshots:
 ![Login Page](Images/Screenshots/LoginPage.png)
 ![Register Page](Images/Screenshots/Register.png)
 ![Admin's Landing Page](Images/Screenshots/AdminLanding.png)
@@ -109,6 +108,6 @@ If you want to add screenshots:
 
 ## 👨‍💻 Author
 
-Built with passion by Ammanuel
+Built with passion by Aman
 
 Powered by teamwork, code, and coffee ☕
